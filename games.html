@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eaf3ff" />
+  <title>Appl Study Arcade</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <main class="arcade">
+    <header class="game-head">
+      <a href="index.html" class="back-link">← <span>Appl Study</span></a>
+      <div class="game-heading"><p class="eyebrow">APPL STUDY ARCADE</p><h1 id="gameTitle">Arcade game</h1></div>
+      <div class="score-box"><span>BEST</span><strong id="bestScore">0</strong></div>
+    </header>
+    <section class="stage-wrap" aria-label="Game area">
+      <canvas id="gameCanvas" aria-label="Game canvas"></canvas>
+      <div class="start-screen" id="startScreen">
+        <div class="start-card"><span class="start-icon" id="startIcon">✦</span><p class="eyebrow">READY WHEN YOU ARE</p><h2 id="startTitle">Start your run</h2><p id="instructions">Use the controls to play.</p><button id="startButton" class="primary-button">Play now</button></div>
+      </div>
+    </section>
+    <footer class="game-footer"><p id="hint">Keyboard: arrows / space</p><div class="touch-controls"><button id="leftButton" aria-label="Move left">←</button><button id="actionButton" aria-label="Jump or flap">Jump / flap</button><button id="rightButton" aria-label="Move right">→</button></div><p class="original-note">Original Appl Study mini-game</p></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

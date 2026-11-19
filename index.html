@@ -9,54 +9,29 @@
 </head>
 <body>
   <div class="aurora" aria-hidden="true"></div>
-
   <header class="topbar">
-    <a class="brand" href="#" aria-label="Appl Study home">
-      <span class="brand-mark">A</span>
-      <span>appl study</span>
-    </a>
-
+    <a class="brand" href="#" aria-label="Appl Study home"><span class="brand-mark">A</span><span>appl study</span></a>
     <nav class="tabs" id="tabs" aria-label="Open pages"></nav>
-
     <button class="icon-button" id="newTabButton" aria-label="Open a new tab" title="New tab">+</button>
   </header>
-
   <main id="homePage" class="home-page">
     <section class="hero">
       <h1>appl study</h1>
       <form id="searchForm" class="search-shell" autocomplete="off">
-        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="m21 21-4.35-4.35m1.35-5.15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-        </svg>
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
         <input id="searchInput" type="search" placeholder="Search games or websites" aria-label="Search games or websites" />
-        <button class="search-button" type="submit" aria-label="Search">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-        </button>
+        <button class="search-button" type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
       </form>
-
       <div id="overview" class="overview" hidden></div>
-
-      <div class="quick-grid" aria-label="Popular games">
-        <button class="game-card" data-name="Snow Rider 3D" data-url="https://snow-rider.io/snow-rider-3d/">
-          <span class="game-icon snow">❄</span>
-          <span><strong>Snow Rider 3D</strong><small>Popular racing game</small></span>
-        </button>
-        <button class="game-card" data-name="Geometry Dash" data-url="https://geometrydashlite.io/">
-          <span class="game-icon geometry">◆</span>
-          <span><strong>Geometry Dash</strong><small>Rhythm platformer</small></span>
-        </button>
-        <button class="game-card" data-name="Flying Kiwi" data-url="https://poki.com/en/g/flying-kiwi">
-          <span class="game-icon kiwi">🥝</span>
-          <span><strong>Flying Kiwi</strong><small>Arcade flying game</small></span>
-        </button>
+      <div class="quick-grid" aria-label="Original arcade games">
+        <button class="game-card" data-name="Frostline Run" data-url="games.html?game=sled"><span class="game-icon snow">❄</span><span><strong>Frostline Run</strong><small>Chill downhill dodger</small></span></button>
+        <button class="game-card" data-name="Pulse Cube" data-url="games.html?game=cube"><span class="game-icon geometry">◆</span><span><strong>Pulse Cube</strong><small>Beat-jumping challenge</small></span></button>
+        <button class="game-card" data-name="Kiwi Skies" data-url="games.html?game=flight"><span class="game-icon kiwi">🥝</span><span><strong>Kiwi Skies</strong><small>Sky-high arcade flier</small></span></button>
       </div>
+      <p class="home-note">Original mini-games made for Appl Study. Use the arrow keys, space bar, or on-screen controls.</p>
     </section>
   </main>
-
-  <main id="browserPage" class="browser-page" hidden>
-    <iframe id="contentFrame" title="Website content" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-  </main>
-
+  <main id="browserPage" class="browser-page" hidden><iframe id="contentFrame" title="Website content" referrerpolicy="strict-origin-when-cross-origin"></iframe></main>
   <script src="script.js"></script>
 </body>
 </html>
