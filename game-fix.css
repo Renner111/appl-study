@@ -1,0 +1,4 @@
+/* Ensure the browser's hidden attribute wins over component display rules. */
+[hidden] {
+  display: none !important;
+}
